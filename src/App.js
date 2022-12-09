@@ -10,9 +10,9 @@ function App() {
   const ages=useSelector(state=>state.Age)
   const genders=useSelector(state=>state.Gender)
   const professions = useSelector(state=>state.Profession)
-  console.log(firstname,lastname,middlename,ages,genders,professions)
+  //console.log(firstname,lastname,middlename,ages,genders,professions)
 
-  //fname lname midname age gender profession
+  
 
   const [fnam,setFname]=useState()
   const [lnam,setLname]=useState()
@@ -55,7 +55,7 @@ function App() {
         <input className="text-blue-900 text-xl" value={midnam} onChange={(e)=>setMname(e.target.value)}/>
         <button onClick={()=>dispatch(midname(midnam))} className=' mx-2 text-amber-400 text-lg '>Dispatch</button>
         <p className='text-blue-900 p-4 text-lg ml-20 '>Your MiddleName is :
-             <lable className='text-amber-600 mx-4 text-lg ml-20' >{midnam}</lable>
+             <lable className='text-amber-600 mx-4 text-lg ml-20' >{ middlename}</lable>
         </p>
       </div>
 
@@ -65,7 +65,7 @@ function App() {
         <input className="text-blue-900 text-xl ml-6" value={Age} onChange={(e)=>setAge(e.target.value)}/>
         <button onClick={()=>dispatch(age(Age))} className=' mx-2 text-amber-400 text-lg '>Dispatch</button>
         <p className='text-blue-900 p-4 text-lg ml-20'>Your age is :
-             <lable className='text-amber-600 mx-4 text-lg ml-20' >{Age}</lable>
+             <lable className='text-amber-600 mx-4 text-lg ml-20' >{ages}</lable>
         </p>
       </div>
 
@@ -74,7 +74,7 @@ function App() {
         <input className="text-blue-900 text-xl ml-6" value={Gender} onChange={(e)=>setGender(e.target.value)}/>
         <button onClick={()=>dispatch(gender(Gender))} className=' mx-2 text-amber-400 text-lg '>Dispatch</button>
         <p className='text-blue-900 p-4 text-lg ml-20'>Your Gender :
-             <lable className='text-amber-600 mx-4 text-lg ml-20' >{Gender}</lable>
+             <lable className='text-amber-600 mx-4 text-lg ml-20' >{genders}</lable>
         </p>
       </div>
 
@@ -83,7 +83,7 @@ function App() {
         <input className="text-blue-900 text-xl" value={Profession} onChange={(e)=>setProfession(e.target.value)}/>
         <button onClick={()=>dispatch(profession(Profession))} className=' mx-2 text-amber-400 text-lg '>Dispatch</button>
         <p className='text-blue-900 p-4 text-lg ml-20'>Your Profession is :
-             <lable className='text-amber-600 mx-4 text-lg ml-20' >{Profession}</lable>
+             <lable className='text-amber-600 mx-4 text-lg ml-20' >{professions}</lable>
         </p>
       </div>
      
