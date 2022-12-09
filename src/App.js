@@ -29,7 +29,7 @@ function App() {
     <div className=" flex flex-col items-center">
      <div className=' border-2 border-cyan-700 border-spacing-8 my-10' >
 
-      <p className='flex text-yellow-500 text-4xl my-7 ml-5 '>Register Here</p>
+      <p className='flex text-yellow-500 text-4xl my-7 ml-20 '>Register Here</p>
       <div className=' items-center '>
         <lable className='text-amber-600 mx-4 text-lg' >FIRSTNAME </lable>
         <input className="text-blue-900 text-xl" value={fnam} onChange={(e)=>setFname(e.target.value)}/>
