@@ -34,7 +34,7 @@ function App() {
         <lable className='text-amber-600 mx-4 text-lg' >FIRSTNAME </lable>
         <input className="text-blue-900 text-xl" value={fnam} onChange={(e)=>setFname(e.target.value)}/>
         <button onClick={()=>dispatch(fname(fnam))} className=' mx-2 text-amber-400 text-lg '>Dispatch</button>
-        <p className='text-blue-900 p-4 text-lg ml-20 '>FirstName :
+        <p className='text-blue-900 p-4 text-lg ml-20 '>Your FirstName :
              <lable className='text-amber-600 mx-4 text-lg ml-20' >{firstname}</lable>
         </p>
         
